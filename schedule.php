@@ -24,48 +24,54 @@
 <body>
   <?php include_once('header.php'); ?>
 	<div class="container">
-		<table class="table" border="0">
-			<thead>
-				<tr>
-					<th></th>
-					<th colspan="<?php echo $max; ?>">Fri, 31st Oct</th>
-					<th colspan="<?php echo $max; ?>">Sat, 1st Nov</th>
-					<th colspan="<?php echo $max; ?>">Sun, 2nd Nov</th>
-					<th colspan="<?php echo $max; ?>">Mon, 3rd Nov</th>
-					<th colspan="<?php echo $max; ?>">Tue, 4th Nov</th>
-				</tr>
-			</thead>
-			<tbody>
-			<?php
-			$harshit =1;
-				for($hour = 0; $hour < 24; $hour++) {
-					echo "<tr>";
-					echo "<th>".( ($hour < 10)? "0" : "" ).$hour."00 hrs</th>";
-					for($i=0; $i< 5*$max; $i++) {
-						$day = (int)($i/$max);
-						$index = $i%$max;
-						$class="";
-						if (isset($mapping[$day][$hour][$index])) {
-							$event = $mapping[$day][$hour][$index];
-							$class = $classes[$event];
+		<div class="table-container">
+			<table class="table" border="0">
+				<colgroup>
+					<col />
+					<?php
+						for($i=0; $i < numOfDays; $i++) {
+							echo "<col span='{$max}' class='day{$i}'>";
 						}
-						echo "<td class='{$class}' ><div></div></td>";
+					?>
+				</colgroup>
+				<thead>
+					<tr>
+						<th></th>
+						<th colspan="<?php echo $max; ?>">Fri, 31st Oct</th>
+						<th colspan="<?php echo $max; ?>">Sat, 1st Nov</th>
+						<th colspan="<?php echo $max; ?>">Sun, 2nd Nov</th>
+						<th colspan="<?php echo $max; ?>">Mon, 3rd Nov</th>
+						<th colspan="<?php echo $max; ?>">Tue, 4th Nov</th>
+					</tr>
+				</thead>
+				<tbody>
+				<?php
+				$harshit =1;
+					for($hour = 0; $hour < 24; $hour++) {
+						echo "<tr>";
+						echo "<th class='hour{$hour}'>".( ($hour < 10)? "0" : "" ).$hour."00 hrs</th>";
+						for($i=0; $i< 5*$max; $i++) {
+							$day = (int)($i/$max);
+							$index = $i%$max;
+							$class="";
+							if (isset($mapping[$day][$hour][$index])) {
+								$event = $mapping[$day][$hour][$index];
+								$class = $classes[$event];
+							}
+							echo "<td class='{$class}' data-hour='{$hour}' data-day='{$day}'><div></div></td>";
+						}
+						echo "</tr>";
 					}
-					echo "</tr>";
-				}
-			?>
-			</tbody>
-		</table>
+				?>
+				</tbody>
+			</table>
+		</div>
+		<div class="legend-container"></div>
 	</div>
+	<div class="event-tooltip" style="display: none;"></div>
 	<script>
 var classes = <?php echo json_encode($classes); ?>;
-var rc = new (function(){
-	var rcc = function() {return Math.round(Math.random() * 150) + 40;};
-	this.getColor = function() { return 'rgb(' + rcc() + ', ' + rcc() + ',' + rcc() + ')';};
-})();
-for (aclass in classes) {
-	$('.'+ classes[aclass] +' div' ).css('background-color',rc.getColor());
-}
 	</script>
+	<script src="js/schedule.js"></script>
 </body>
 </html>

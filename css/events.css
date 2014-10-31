@@ -70,21 +70,6 @@ h3.sub-heading {
   transform-origin: top center;
   transition: all 0.2s;
 }
-/*
-.inner-circle.back {
-  z-index: 1;
-  position: relative;
-  top: -100%;
-  background-color: transparent;
-}
-.inner-circle.back .circle-content.target {
-  height: 0px;
-  width: 0px;
-  background: white;
-  border-radius: 100%;
-  padding: 0;
-}
-*/
 .overlay {
   display: none;
   position: fixed;

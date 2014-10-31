@@ -1,6 +1,46 @@
 .container {
-  margin-top: 2em;
   color: white;
+  box-shadow: 0 0 10px 10px white;
+  width: 90%;
+  margin: 2em auto;
+}
+.container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.table-container {
+  float: left;
+  margin-left: 1em;
+}
+.legend-container {
+  float: right;
+  margin-right: 1em;
+  font-size: 1.2em;
+}
+.legend-row {
+  cursor: pointer;
+}
+.legend-row.onhover {
+  
+}
+.legend-row:before {
+  height: 100%;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+}
+.legend-color, .legend-label{
+  display: inline-block;
+  vertical-align: middle;
+}
+.legend-color {
+  height: 16px;
+  width: 16px;
+  background: yellow;
+}
+.legend-label {
+  margin: 0.25em;
 }
 
 table.table {
@@ -14,16 +54,34 @@ td, th {
 }
 td {
   position: relative;
-  border-left: 1px solid green;
-  border-right: 1px solid green;
+  overflow: hidden;
+  transition: all 0.2s;
 }
 td div {
   position: absolute;
-  top:0;
-  bottom: 0;
+  top:-10px;
+  bottom: -10px;
   left: 0;
   right: 0;
   margin: auto;
-  width: 6px;
+  width: 10px;
   background-color: transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+td div.onhover {
+  box-shadow: 0 0 4px 1px white;
+}
+th.onhover {
+  text-shadow: 0 0 5px white;
+}
+.event-tooltip {
+  display: inline-block;
+  font-size: 1em;
+  background-color: #900;
+  color: white;
+  font-family: cursive;
+  padding: 0.2em 0.6em;
+  border-radius: 0 10px 0 10px;
+  position: absolute;
 }
