@@ -32,7 +32,7 @@ $(function(){
       $overlay.find('.overlay-title').html($this.find('.circle-content').html());
       $overlay.find('.overlay-des').html($this.find('.circle-des').html());
       $overlay.find('.overlay-time').html($this.find('.circle-time').html());
-      $overlay.find('.overlay-venue').html($this.find('.circle-venue').html());
+      $overlay.find('.overlay-venue').html("Venue: "+$this.find('.circle-venue').html());
       $overlay.find('.overlay-link').html($this.find('.circle-link').html());
     }, 200);
   });
