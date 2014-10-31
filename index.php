@@ -1,14 +1,14 @@
 <?php
-  $current_page = "index";
+  $current_page = "./";
 ?>
 <!DOCTYPE html>
 <html>
 <head>
   <title>Felicity Buzz | Home</title>
   <meta charset="utf-8">
-  
+
   <link href='http://fonts.googleapis.com/css?family=Rock+Salt|Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
-  
+
   <!-- Jquery | Include from Google -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <!-- If jquery unavailable from Google, get a local copy -->

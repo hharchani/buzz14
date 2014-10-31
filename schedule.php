@@ -1,5 +1,5 @@
 <?php
-  $current_page = "schedule";
+  $current_page = "schedule.php";
 	include_once('schedule_data.php');
 ?>
 <!DOCTYPE html>

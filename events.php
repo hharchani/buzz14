@@ -1,5 +1,5 @@
 <?php
-  $current_page = "events";
+  $current_page = "events.php";
   include_once("data.php");
 
   function getHour($hour) {

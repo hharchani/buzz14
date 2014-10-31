@@ -2,12 +2,12 @@
 <header class="header">
   <nav><?php
 $pages = array(
-  "index" => "Home",
-  "events" => "Events",
-  "schedule" => "Schedule",
+  "./" => "Home",
+  "events.php" => "Events",
+  "schedule.php" => "Schedule",
 );
 foreach($pages as $page=>$name){
-  echo '<a class="links'.( ($current_page == $page)? ' active' : '' ).'" href="'.$page.'.php"   >'.$name.'</a>';
+  echo '<a class="links'.( ($current_page == $page)? ' active' : '' ).'" href="'.$page.'">'.$name.'</a>';
 }
   ?></nav>
 </header>
