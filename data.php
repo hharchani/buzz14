@@ -62,19 +62,19 @@ $events_cat = array(
     "Open Art" => array(
       "description" => "One event for anyone and everyone who want to try their hands at \"Art\". We are looking for YOUR version of art and nobody else's. Come and show us what inspires you, let your imagination loose and enjoy!!",
       "venue" => "Amphitheatre",
-      "time" => array( array( 2, 15, 16 ) ),
+      "time" => array( array( 2, 15, 17 ) ),
       "link" => "<a href='http://goo.gl/forms/kMIftyZfAi'>Register Here</a>"
     ),
     "Paper Dressing" => array(
       "description" => "Do you see yourself as the next Manish Malhotra or Neeta Lulla? Here comes your first test -- dress up a friend in a costume made entirely out of newspapers. How's that for a challenge ?",
       "venue" => "Amphitheatre",
-      "time" => array( array( 2, 15, 16 ) ),
+      "time" => array( array( 1, 16, 18 ) ),
       "link" => "<a href='http://goo.gl/forms/rIZOw6uwtL'>Register Here</a>"
     ),
     "Paint a Face" => array(
       "description" => "Feeling blue, or green with envy, red with rage or having a shade of ecstasy?? Realize your fantasies, convey your expressions, and emote with colors!",
       "venue" => "Amphitheatre",
-      "time" => array( array( 2, 10, 12 ) ),
+      "time" => array( array( 2, 11, 13 ) ),
       "link" => "<a href='http://goo.gl/forms/OvvG81Qx2O'>Register Here</a>"
     ),
   ),
