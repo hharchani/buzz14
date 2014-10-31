@@ -12,3 +12,18 @@ table.table {
 td, th {
   padding: 0.1em 1em;
 }
+td {
+  position: relative;
+  border-left: 1px solid green;
+  border-right: 1px solid green;
+}
+td div {
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 6px;
+  background-color: transparent;
+}

@@ -24,24 +24,32 @@
 <body>
   <?php include_once('header.php'); ?>
 	<div class="container">
-		<table class="table" border="1">
+		<table class="table" border="0">
 			<thead>
 				<tr>
 					<th></th>
-					<th colspan="<?php echo $max; ?>">Friday, 31st October</th>
-					<th colspan="<?php echo $max; ?>">Saturday, 1st November</th>
-					<th colspan="<?php echo $max; ?>">Sunday, 2nd November</th>
-					<th colspan="<?php echo $max; ?>">Monday, 3rd November</th>
-					<th colspan="<?php echo $max; ?>">Tuesday, 4th November</th>
+					<th colspan="<?php echo $max; ?>">Fri, 31st Oct</th>
+					<th colspan="<?php echo $max; ?>">Sat, 1st Nov</th>
+					<th colspan="<?php echo $max; ?>">Sun, 2nd Nov</th>
+					<th colspan="<?php echo $max; ?>">Mon, 3rd Nov</th>
+					<th colspan="<?php echo $max; ?>">Tue, 4th Nov</th>
 				</tr>
 			</thead>
 			<tbody>
 			<?php
+			$harshit =1;
 				for($hour = 0; $hour < 24; $hour++) {
 					echo "<tr>";
 					echo "<th>".( ($hour < 10)? "0" : "" ).$hour."00 hrs</th>";
 					for($i=0; $i< 5*$max; $i++) {
-						echo "<td id="."c".(int)($i/$max).( ($hour < 10)? "0" : "" ).$hour.($i%5).">&nbsp;</td>";
+						$day = (int)($i/$max);
+						$index = $i%$max;
+						$class="";
+						if (isset($mapping[$day][$hour][$index])) {
+							$event = $mapping[$day][$hour][$index];
+							$class = $classes[$event];
+						}
+						echo "<td class='{$class}' ><div></div></td>";
 					}
 					echo "</tr>";
 				}
@@ -50,13 +58,14 @@
 		</table>
 	</div>
 	<script>
-
+var classes = <?php echo json_encode($classes); ?>;
 var rc = new (function(){
 	var rcc = function() {return Math.round(Math.random() * 150) + 40;};
-	this.get = function() { return 'rgb(' + rcc() + ', ' + rcc() + ',' + rcc() + ')';};
+	this.getColor = function() { return 'rgb(' + rcc() + ', ' + rcc() + ',' + rcc() + ')';};
 })();
-<?php
-?>
+for (aclass in classes) {
+	$('.'+ classes[aclass] +' div' ).css('background-color',rc.getColor());
+}
 	</script>
 </body>
 </html>

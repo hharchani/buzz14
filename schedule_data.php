@@ -14,20 +14,21 @@
   
   define("numOfDays", 5, true);
   
-  $schedule = [
-    "Hackathon"         => [ [ 3, 22, 23 ], [ 4, 00, 14 ] ],
+  $schedule = array(
+    "Hackathon"         => array( array( 3, 22, 23 ), array( 4, 00, 14 ) ),
     
-    "Make a Meme"       => [ [ 1, 00, 23 ], [ 2, 00, 23 ] ],
+    "Make a Meme"       => array( array( 1, 00, 23 ), array( 2, 00, 23 ) ),
     
-    "Stomp the Yard"    => [ [ 1, 18, 19 ] ],
-    "Antakshari"        => [ [ 2, 14, 14 ] ],
-    "Movie Quiz"        => [ [ 2, 15, 15 ] ],
-    "Dumb C"            => [ [ 2, 16, 16 ] ],
-    "Pandora's Box"     => [ [ 2, 18, 18 ] ],
+    "Stomp the Yard"    => array( array( 1, 15, 19 ) ),
+    "Antakshari"        => array( array( 2, 14, 14 ) ),
+    "Movie Quiz"        => array( array( 2, 15, 15 ) ),
+    "Dumb C"            => array( array( 2, 16, 16 ) ),
+    "Pandora's Box"     => array( array( 2, 18, 18 ) ),
     
-    "Zombie zone"       => [ [ 0, 21, 23 ], [ 1, 18, 23 ], [ 3, 15, 20 ] ],
+    "Zombie zone"       => array( array( 0, 21, 23 ), array( 1, 18, 23 ), array( 3, 15, 20 ) ),
     
-  ];
+    
+  );
   
   $mapping = array();
   $dayWise = array();
@@ -43,7 +44,6 @@
       foreach($parts as $timespan) {
         if ($i == $timespan[day]) {
           $dayWise[$i][$event] = $timespan;
-          
           break;
         }
       }
@@ -53,12 +53,9 @@
   function forSorting($timespan1, $timespan2) {
     return ($timespan1[startTime] < $timespan2[startTime]) ? -1 : 1;
   }
-  var_dump($dayWise[0]);
   for($i=0; $i<numOfDays; $i++) {
-    usort($dayWise[$i], 'forSorting');
+    uasort($dayWise[$i], 'forSorting');
   }
-  echo "<hr>";
-  var_dump($dayWise[0]);
   $max = 0;
   /*
   foreach($schedule as $event=>$parts) {
@@ -78,10 +75,31 @@
   //var_dump($dayWise[4]);
   //print_r($dayWise);
   for($i=0; $i < numOfDays; $i++) {
-    foreach($dayWise[$i] as $event=>$timespan) {
-      echo "--";
-      //var_dump($event);
-      echo "--";
+    foreach($dayWise[$i] as $event=>$junk) {
+      $parts = $schedule[$event];
+      $curr = -1;
+      foreach($parts as $timespan) {
+        if ($timespan[day] == $i) {
+          for($j = $timespan[startTime]; $j <= $timespan[endTime]; $j++ ) {
+            $cc = count($mapping[$i][$j]);
+            if ($curr == -1) {
+              $curr = $cc;
+            }
+            if (isset($mapping[$i][$j][$curr])) {
+              echo $event;
+            }
+            $mapping[$i][$j][$curr] = $event;
+            if ($cc+1 > $max) {
+              $max = $cc+1;
+            }
+          }
+        }
+      }
     }
+  }
+  $classes = array();
+  $excludes = array(" ", "'");
+  foreach($schedule as $event=>$timespan) {
+    $classes[$event] = str_replace($excludes, "-", strtolower($event));
   }
   

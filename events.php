@@ -27,38 +27,53 @@
     
     <div class="row">
       <div class="sub-heading-wrapper">
-        <h3 class="sub-heading">Threads</h3>
+        <h3 class="sub-heading">Zombie Zone</h3>
       </div>
       <div class="circle-container no-user-select">
         
         <div class="circle-wrapper">
           <div class="outer-circle">
             <div class="inner-circle">
-              <div class="circle-content-wrapper"><div class="circle-content">Hackathon</div></div>
+              <div class="circle-content-wrapper"><div class="circle-content">Counter Strike 1.6</div></div>
             </div>
           </div>
         </div>
         <div class="circle-wrapper">
           <div class="outer-circle">
             <div class="inner-circle">
-              <div class="circle-content-wrapper"><div class="circle-content">Break In</div></div>
+              <div class="circle-content-wrapper"><div class="circle-content">Fifa 2014</div></div>
             </div>
           </div>
         </div>
         <div class="circle-wrapper">
           <div class="outer-circle">
             <div class="inner-circle">
-              <div class="circle-content-wrapper"><div class="circle-content">Code Craft</div></div>
+              <div class="circle-content-wrapper"><div class="circle-content">Call of duty MW1</div></div>
             </div>
           </div>
         </div>
+				<div class="circle-wrapper">
+          <div class="outer-circle">
+            <div class="inner-circle">
+              <div class="circle-content-wrapper"><div class="circle-content">NFS Most Wanted</div></div>
+            </div>
+          </div>
+        </div>
+				<div class="circle-wrapper">
+          <div class="outer-circle">
+            <div class="inner-circle">
+              <div class="circle-content-wrapper"><div class="circle-content">DOTA 2</div></div>
+            </div>
+          </div>
+        </div>
+				
       </div>
     </div>
     <hr />
     <!-- ----------------------------------------------------------------------- -->
     <div class="row">
       <div class="sub-heading-wrapper">
-        <h3 class="sub-heading">Threads</h3>
+        <h3 class="sub-heading">Zombie zone</h3>
       </div>
       <div class="circle-container no-user-select">
         
@@ -91,59 +106,6 @@
   </div>
   <div class="full-overlay"></div>
   <div class="overlay"></div>
-  <script>
-$(function(){
-  //var max = Math.max.apply(undefined, $('.circle-content-wrapper').map(function(){ return $(this).outerWidth() }).get());
-  $('.outer-circle').each(function(){
-    var $content = $(this).find('.circle-content');
-    var size = Math.max($content.outerWidth(), $content.outerHeight()) + 1;
-    $(this).css({
-      'height' : size + 'px',
-      'width' : size + 'px'
-    });
-  }).click(function(){
-    var $this = $(this).find('.inner-circle').css('transform', 'rotateX(90deg)');
-    var offset = $this.offset();
-    var h = $this.height();
-    var w = $this.width();
-    var scrollTop = $(document).scrollTop();
-    $('.overlay').css({
-      'top' : (offset.top - scrollTop  + h/2) + 'px',
-      'left': (offset.left + w/2) + 'px',
-    }).show().data('circle', this);
-    $('.full-overlay').fadeIn(100);
-    setTimeout(function(){
-      var winH = $(window).height();
-      var winW = $(window).width();
-      var size = Math.min(winH, winW);
-      $('.overlay').animate({
-        'top' : (winH - size)/2 + 'px',
-        'left': (winW - size)/2 + 'px',
-        'height': size + 'px',
-        'width' : size + 'px'
-      });
-    }, 200);
-  });
-  
-  $(document).on('keydown', function(e){
-    if ( ( e.key == "Esc" || e.key == "Escape" ) && $('.overlay').is(':visible') ) {
-      var $circle = $( $('.overlay').data('circle') );
-      var offset = $circle.offset();
-      var h = $circle.height();
-      var w = $circle.width();
-      var scrollTop = $(document).scrollTop();
-      $('.full-overlay').fadeOut();
-      $('.overlay').animate({
-        'height': '0',
-        'width' : '0',
-        'top' : (offset.top - scrollTop  + h/2) + 'px',
-        'left': (offset.left + w/2) + 'px',
-      }, 200, function(){
-        $( $(this).hide().data('circle') ).find('.inner-circle').css('transform', 'rotateX(0deg)');
-      });
-    }
-  });
-});
-  </script>
+  <script src="js/events.js"></script>
 </body>
 </html>
