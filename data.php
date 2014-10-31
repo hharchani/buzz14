@@ -1,5 +1,5 @@
 <?php
-$events = array(
+$events_cat = array(
   "Threads" => array(
     "Hackathon" => array(
       "description" => "There are some of us that like to build things more than anything. It could be a mobile app, it could be a super useful website, or it could be the next big startup idea. For the developers amongst you, the ones that do not tire, the ones that are used to long sleep less nights and the ones that know no sleep. Some of us like to build things more than anything; Welcome tireless soldier, for we present to you The Hackathon.",
@@ -47,10 +47,8 @@ $events = array(
       "time" => array( array( 2, 10, 12 ) ),
       "link" => "<a href='http://goo.gl/forms/OvvG81Qx2O'>Register Here</a>"
     ),
-    
-    
   ),
-  "Miscelenious" => array(
+  "Miscellaneous" => array(
     "Antakshari" => array(
       "description" => "Some Desc of this",
       "venue" => "Himalaya 105",
@@ -76,13 +74,13 @@ $events = array(
     "Slow Cycling" => array(
       "description" => "Tired of this fast life. Want something slow. Then this is what you should try :P",
       "venue" => " Football Ground",
-      "time" => array( ),
+      "time" => array( array( 2, 11.5, 13 ) ),
       "link" => "<a href='https://docs.google.com/forms/d/1dj_ZVRiZGhb6ZtEcKTpMVNSUQ_gcdm0aEG0fsDIoHUg/viewform'>Click Here to register</a>",
     ),
     "Dodge Ball" => array(
       "description" => "For all those who just want to have fun as these are games which you don't get to play in the regular course", 
       "venue" => " Football Ground",
-      "time" => array( ),
+      "time" => array( array( 2, 8.5, 10.5 ) ),
       "link" => "Register here:<br><a href='https://docs.google.com/forms/d/1BX_QnSY3IKLiLn1sE21CFYLpwkK9ux8Ni4VPdp34gnM/viewform'> Girls </a> <a href='https://docs.google.com/forms/d/1CsH_-zfCNyh6YIDHTjMwTqb20n9gnMzqnGpaRcvpf78/viewform'> Boys </a>",
     ),
   )
