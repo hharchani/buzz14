@@ -81,17 +81,17 @@ $events_cat = array(
   "Miscellaneous" => array(
     "Antakshari" => array(
       "description" => "Some Desc of this",
-      "venue" => "Himalaya 105",
+      "venue" => "To be announced",
       "time" => array( array( 1, 14, 17 ) ),
     ),
     "Talent Showcase" => array(
       "description" => "An event where you get a platform to show \"ANY\" of your talents like:<br><ul style='text-align:left;'><li>MUSIC(Singing,Playing instruments or both)</li><li>Dramatics</li><li>Stand-up comedy</li><li>etc. :P</li>",
-      "venue" => "Himalaya 105",
+      "venue" => "To be announced",
       "time" => array( array( 2, 20, 22 ) ),
     ),
     "Gully Cricket" => array(
       "description" => "Most games are skin-deep, but cricket goes to the bone. So why not revive our school-time memories of playing street cricket anywhere and everywhere :p",
-      "venue" => "Himalaya 105",
+      "venue" => "To be announced",
       "time" => array( ),
       "link" => "<a href='https://docs.google.com/forms/d/1pVeCcCgy3waBnkmRluZjmtLNWmKwc7RqpbAukmqTDBM/viewform'>Click Here to register</a>",
     ),
