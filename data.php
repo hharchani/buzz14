@@ -55,8 +55,8 @@ $events_cat = array(
       "time" => array( array( 1, 18, 23 ), array( 2, 15, 20 ) ),
       "link" => "<a href='https://docs.google.com/forms/d/1-8k7OLq8uk3nhxuEgXAQDGlXYotEkew7ww7y6BZvonM/viewform?usp=send_form'>Register</a>",
     ),
-    
-    
+
+
   ),
   "Kalakshetra" => array(
     "Open Art" => array(
@@ -85,7 +85,7 @@ $events_cat = array(
       "time" => array( array( 1, 14, 17 ) ),
     ),
     "Talent Showcase" => array(
-      "description" => "An event where you get a platform to show \"ANY\" of your talents like:<br><ul><li>MUSIC(Singing,Playing instruments or both)</li><li>Dramatics</li><li>Stand-up comedy</li><li>etc. :P</li>",
+      "description" => "An event where you get a platform to show \"ANY\" of your talents like:<br><ul style='text-align:left;'><li>MUSIC(Singing,Playing instruments or both)</li><li>Dramatics</li><li>Stand-up comedy</li><li>etc. :P</li>",
       "venue" => "Himalaya 105",
       "time" => array( array( 2, 20, 22 ) ),
     ),
@@ -108,7 +108,7 @@ $events_cat = array(
       "link" => "<a href='https://docs.google.com/forms/d/1dj_ZVRiZGhb6ZtEcKTpMVNSUQ_gcdm0aEG0fsDIoHUg/viewform'>Click Here to register</a>",
     ),
     "Dodge Ball" => array(
-      "description" => "For all those who just want to have fun as these are games which you don't get to play in the regular course", 
+      "description" => "For all those who just want to have fun as these are games which you don't get to play in the regular course",
       "venue" => " Football Ground",
       "time" => array( array( 2, 8.5, 10.5 ) ),
       "link" => "Register here:<br><a href='https://docs.google.com/forms/d/1BX_QnSY3IKLiLn1sE21CFYLpwkK9ux8Ni4VPdp34gnM/viewform'>Girls</a> <a href='https://docs.google.com/forms/d/1CsH_-zfCNyh6YIDHTjMwTqb20n9gnMzqnGpaRcvpf78/viewform'>Boys</a>",
