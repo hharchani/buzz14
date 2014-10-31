@@ -1,5 +1,5 @@
 <?php
-$events = array(
+$events_cat = array(
   "Threads" => array(
     "Hackathon" => array(
       "description" => "There are some of us that like to build things more than anything. It could be a mobile app, it could be a super useful website, or it could be the next big startup idea. For the developers amongst you, the ones that do not tire, the ones that are used to long sleep less nights and the ones that know no sleep. Some of us like to build things more than anything; Welcome tireless soldier, for we present to you The Hackathon.",
