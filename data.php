@@ -24,6 +24,23 @@ $events_cat = array(
       "time" => array( array( 4, 17, 20 ) ),
     ),
   ),
+  "Pulsation" => array(
+    "King of Breadboards" => array(
+      "description" => "",
+      "venue" => "Electronics Lab (Nilgiri)",
+      "time" => array( array( 2, 14, 17 ) ),
+    ),
+    "Onsite Quiz" => array(
+      "description" => "",
+      "venue" => "SH-1",
+      "time" => array( array( 2, 14, 17 ) ),
+    ),
+    "E-Quiz" => array(
+      "description" => "",
+      "venue" => "Wherever you want to :P (Online event)",
+      "time" => array( array( 2, 8, 24 ) ),
+    ),
+  ),
   "Zombie Zone" => array(
     "Counter Strike 1.6" => array(
       "description" => "Do you regularly feel your adrenaline wasting away? Can you spend hours in front of a computer playing games without a single thought of food or drink? If that’s a yes, then Zombie Zone’s the place to be for all you maniac gamers out there!",

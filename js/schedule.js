@@ -50,17 +50,6 @@ for (event in classes) {
 		window.location = "events.php#"+href;
 	});
 }
-$(function(){
-  var elem = $('.legend-container');
-  if (elem.outerHeight() > window.innerHeight) {
-    elem.css({
-      'width' : elem.outerWidth()*2 + 'px'
-    }).find('.legend-row').css({
-      'width': '50%',
-      'float': 'left'
-    });
-  }
-});
 var tooltip = new (function(){
 	this.show = function(e, event){
 		$('.event-tooltip').hide().css({
