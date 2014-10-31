@@ -7,7 +7,7 @@
   <title>Felicity Buzz | Home</title>
   <meta charset="utf-8">
   
-  <link href='http://fonts.googleapis.com/css?family=Rock+Salt|Nothing+You+Could+Do|Butterfly+Kids|Loto' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Rock+Salt|Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
   
   <!-- Jquery | Include from Google -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

@@ -43,7 +43,7 @@
 <head>
   <title>Events | Felicity Buzz</title>
   <meta charset="utf-8">
-  <link href='http://fonts.googleapis.com/css?family=Loto|Rock+Salt' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
 
   <!-- Jquery | Include from Google
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
