@@ -32,6 +32,11 @@
     }
     return $timeStr;
   }
+
+  function classname($name) {
+    $excludes = array(" ", "'");
+    return str_replace($excludes, "-", strtolower($name));
+  }
 ?>
 <!DOCTYPE html>
 <html>
@@ -68,7 +73,7 @@
             foreach ($cat_data as $name=>$event) {
           ?>
           <div class="circle-wrapper">
-            <div class="outer-circle">
+            <div class="outer-circle" id="<?php echo classname($name); ?>">
               <div class="inner-circle">
                 <div class="circle-content-wrapper">
                   <div class="circle-content"><?php echo $name; ?></div>
