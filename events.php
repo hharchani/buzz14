@@ -3,8 +3,9 @@
   include_once("data.php");
 
   function getHour($hour) {
+    if($hour==24)
+      return "11:59 PM";
     $h = floor($hour);
-    if($h==14)$h=0;
     $part = $hour-$h;
     $m = floor($part * 60);
     $a = ($h >= 12)?'PM':'AM';
@@ -22,11 +23,11 @@
     );
     $timeStr = "";
     foreach ($times as $i=>$time) {
-      if (!($i > 0 && $time[0] == $times[$i-1][0]+1 && $time[1] == 0 && $times[$i-1][2] == 23)) {
+      if (!($i > 0 && $time[0] == $times[$i-1][0]+1 && $time[1] == 0 && $times[$i-1][2] == 24)) {
         $timeStr .= "<br>".$days[$time[0]].", ".getHour($time[1]);
       }
-      if (!($i < count($times)-1 && $time[0] == $times[$i+1][0]-1 && $time[2] == 23 && $times[$i+1][1] == 0)) {
-        $timeStr .= " - ".$days[$time[0]].", ".getHour($time[2]+1);
+      if (!($i < count($times)-1 && $time[0] == $times[$i+1][0]-1 && $time[2] == 24 && $times[$i+1][1] == 0)) {
+        $timeStr .= " - ".$days[$time[0]].", ".getHour($time[2]);
       }
     }
     return $timeStr;
@@ -71,10 +72,10 @@
               <div class="inner-circle">
                 <div class="circle-content-wrapper">
                   <div class="circle-content"><?php echo $name; ?></div>
-                  <div class="circle-des"><?php echo $event['description']; ?></div>
-                  <div class="circle-time"><?php echo getTime($event['time']); ?></div>
-                  <div class="circle-venue"><?php echo $event['venue']; ?></div>
-                  <div class="circle-link"><?php echo isset($event['link'])?$event['link']:''; ?></div>
+                  <div class="circle-data circle-des"><?php echo $event['description']; ?></div>
+                  <div class="circle-data circle-time"><?php echo getTime($event['time']); ?></div>
+                  <div class="circle-data circle-venue"><?php echo $event['venue']; ?></div>
+                  <div class="circle-data circle-link"><?php echo isset($event['link'])?$event['link']:''; ?></div>
                 </div>
               </div>
             </div>
