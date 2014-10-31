@@ -22,7 +22,7 @@
   cursor: pointer;
 }
 .legend-row.onhover {
-  
+
 }
 .legend-row:before {
   height: 100%;
@@ -50,7 +50,7 @@ table.table {
 }
 
 td, th {
-  padding: 0.1em 1em;
+  padding: 0.1em 0.6em;
 }
 td {
   position: relative;

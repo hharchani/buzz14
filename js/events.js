@@ -8,7 +8,7 @@ $(function(){
       'width' : size + 'px'
     });
   }).click(function(){
-    location.hash = '#'+this.id;
+    location.hash = '#'+this.id.substr(0, this.id.length-3);
     var $this = $(this).find('.inner-circle').css('transform', 'rotateX(90deg)');
     var offset = $this.offset();
     var h = $this.height();
@@ -40,7 +40,7 @@ $(function(){
   });
 
   var close = function(){
-    location.hash = '';
+    location.hash = '#jugaad';
     var $circle = $( $('.overlay').data('circle') );
     var offset = $circle.offset();
     var h = $circle.height();
@@ -72,9 +72,13 @@ $(function(){
 
 $(document).ready(function() {
   if (location.hash) {
-    $circ = $(location.hash);
+    $circ = $(location.hash+'-id');
     if ($circ.length) {
-      $circ.click();
+      $('body').animate({'scrollTop': $circ.offset().top - (($(window).height()/2)-100)}, {
+        complete: function() {
+          $circ.click();
+        }
+      });
     }
   }
 });

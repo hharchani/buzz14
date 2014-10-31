@@ -1,5 +1,5 @@
 <?php
-  $current_page = "schedule";
+  $current_page = "schedule.php";
 	include_once('schedule_data.php');
 ?>
 <!DOCTYPE html>
@@ -25,7 +25,7 @@
   <?php include_once('header.php'); ?>
 	<div class="container">
 		<div class="table-container">
-			<table class="table" border="0">
+			<table class="table">
 				<colgroup>
 					<col />
 					<?php

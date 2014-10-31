@@ -72,43 +72,43 @@ $events_cat = array(
       "time" => array( array( 1, 18, 23 ), array( 2, 15, 20 ) ),
       "link" => "<a href='https://docs.google.com/forms/d/1-8k7OLq8uk3nhxuEgXAQDGlXYotEkew7ww7y6BZvonM/viewform?usp=send_form'>Register</a>",
     ),
-    
-    
+
+
   ),
   "Kalakshetra" => array(
     "Open Art" => array(
       "description" => "One event for anyone and everyone who want to try their hands at \"Art\". We are looking for YOUR version of art and nobody else's. Come and show us what inspires you, let your imagination loose and enjoy!!",
       "venue" => "Amphitheatre",
-      "time" => array( array( 2, 15, 16 ) ),
+      "time" => array( array( 2, 15, 17 ) ),
       "link" => "<a href='http://goo.gl/forms/kMIftyZfAi'>Register Here</a>"
     ),
     "Paper Dressing" => array(
       "description" => "Do you see yourself as the next Manish Malhotra or Neeta Lulla? Here comes your first test -- dress up a friend in a costume made entirely out of newspapers. How's that for a challenge ?",
       "venue" => "Amphitheatre",
-      "time" => array( array( 2, 15, 16 ) ),
+      "time" => array( array( 1, 16, 18 ) ),
       "link" => "<a href='http://goo.gl/forms/rIZOw6uwtL'>Register Here</a>"
     ),
     "Paint a Face" => array(
       "description" => "Feeling blue, or green with envy, red with rage or having a shade of ecstasy?? Realize your fantasies, convey your expressions, and emote with colors!",
       "venue" => "Amphitheatre",
-      "time" => array( array( 2, 10, 12 ) ),
+      "time" => array( array( 2, 11, 13 ) ),
       "link" => "<a href='http://goo.gl/forms/OvvG81Qx2O'>Register Here</a>"
     ),
   ),
   "Miscellaneous" => array(
     "Antakshari" => array(
       "description" => "Some Desc of this",
-      "venue" => "Himalaya 105",
+      "venue" => "To be announced",
       "time" => array( array( 1, 14, 17 ) ),
     ),
     "Talent Showcase" => array(
-      "description" => "An event where you get a platform to show \"ANY\" of your talents like:<br><ul><li>MUSIC(Singing,Playing instruments or both)</li><li>Dramatics</li><li>Stand-up comedy</li><li>etc. :P</li>",
-      "venue" => "Himalaya 105",
+      "description" => "An event where you get a platform to show \"ANY\" of your talents like:<br><ul style='text-align:left;'><li>MUSIC(Singing,Playing instruments or both)</li><li>Dramatics</li><li>Stand-up comedy</li><li>etc. :P</li>",
+      "venue" => "To be announced",
       "time" => array( array( 2, 20, 22 ) ),
     ),
     "Gully Cricket" => array(
       "description" => "Most games are skin-deep, but cricket goes to the bone. So why not revive our school-time memories of playing street cricket anywhere and everywhere :p",
-      "venue" => "Himalaya 105",
+      "venue" => "To be announced",
       "time" => array( ),
       "link" => "<a href='https://docs.google.com/forms/d/1pVeCcCgy3waBnkmRluZjmtLNWmKwc7RqpbAukmqTDBM/viewform'>Click Here to register</a>",
     ),
@@ -125,7 +125,7 @@ $events_cat = array(
       "link" => "<a href='https://docs.google.com/forms/d/1dj_ZVRiZGhb6ZtEcKTpMVNSUQ_gcdm0aEG0fsDIoHUg/viewform'>Click Here to register</a>",
     ),
     "Dodge Ball" => array(
-      "description" => "For all those who just want to have fun as these are games which you don't get to play in the regular course", 
+      "description" => "For all those who just want to have fun as these are games which you don't get to play in the regular course",
       "venue" => " Football Ground",
       "time" => array( array( 2, 8.5, 10.5 ) ),
       "link" => "Register here:<br><a href='https://docs.google.com/forms/d/1BX_QnSY3IKLiLn1sE21CFYLpwkK9ux8Ni4VPdp34gnM/viewform'>Girls</a> <a href='https://docs.google.com/forms/d/1CsH_-zfCNyh6YIDHTjMwTqb20n9gnMzqnGpaRcvpf78/viewform'>Boys</a>",
