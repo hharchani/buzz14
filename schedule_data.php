@@ -82,9 +82,7 @@
             if ($curr == -1) {
               $curr = $cc;
             }
-            if (isset($mapping[$i][$j][$curr])) {
-              echo $event;
-            }
+            
             $mapping[$i][$j][$curr] = $event;
             if ($cc+1 > $max) {
               $max = $cc+1;
@@ -95,7 +93,7 @@
     }
   }
   $classes = array();
-  $excludes = array(" ", "'");
+  $excludes = array(" ", "'", ".");
   foreach($schedule as $event=>$timespan) {
     $classes[$event] = str_replace($excludes, "-", strtolower($event));
   }

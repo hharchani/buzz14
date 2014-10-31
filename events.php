@@ -34,7 +34,7 @@
   }
 
   function classname($name) {
-    $excludes = array(" ", "'");
+    $excludes = array(" ", "'", ".");
     return str_replace($excludes, "-", strtolower($name));
   }
 ?>

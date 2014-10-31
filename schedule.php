@@ -46,7 +46,6 @@
 				</thead>
 				<tbody>
 				<?php
-				$harshit =1;
 					for($hour = 0; $hour < 24; $hour++) {
 						echo "<tr>";
 						echo "<th class='hour{$hour}'>".( ($hour < 10)? "0" : "" ).$hour."00 hrs</th>";

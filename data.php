@@ -24,9 +24,39 @@ $events_cat = array(
       "time" => array( array( 4, 17, 20 ) ),
     ),
   ),
-  "Pulsation" => array(
-  ),
   "Zombie Zone" => array(
+    "Counter Strike 1.6" => array(
+      "description" => "Do you regularly feel your adrenaline wasting away? Can you spend hours in front of a computer playing games without a single thought of food or drink? If that’s a yes, then Zombie Zone’s the place to be for all you maniac gamers out there!",
+      "venue" => "TL-1 and TL-2.",
+      "time" => array( array( 1, 18, 23 ), array( 2, 15, 20 ) ),
+      "link" => "<a href='https://docs.google.com/forms/d/1oC4Kpkhac42LwSMjFZaIRDDsCWCNdRQ22ymPNGssERI/viewform?usp=send_form'>Register</a>",
+    ),
+    "FIFA 14" => array(
+      "description" => "Do you regularly feel your adrenaline wasting away? Can you spend hours in front of a computer playing games without a single thought of food or drink? If that’s a yes, then Zombie Zone’s the place to be for all you maniac gamers out there!",
+      "venue" => "TL-1 and TL-2.",
+      "time" => array( array( 1, 18, 23 ), array( 2, 15, 20 ) ),
+      "link" => "<a href='https://docs.google.com/forms/d/1z-F4Uvg329e66JmDl85YAZBOaCIPQvbeQXMS6l-wmQQ/viewform?usp=send_form'>Register</a>",
+    ),
+    "NFS Most Wanted" => array(
+      "description" => "Do you regularly feel your adrenaline wasting away? Can you spend hours in front of a computer playing games without a single thought of food or drink? If that’s a yes, then Zombie Zone’s the place to be for all you maniac gamers out there!",
+      "venue" => "TL-1 and TL-2.",
+      "time" => array( array( 1, 18, 23 ), array( 2, 15, 20 ) ),
+      "link" => "<a href='https://docs.google.com/forms/d/1r5bwk0XVfdXKK4WmxbbEsKDr9exK9xApPB66iudgd_8/viewform?usp=send_form'>Register</a>",
+    ),
+    "Call Of Duty MW1" => array(
+      "description" => "Do you regularly feel your adrenaline wasting away? Can you spend hours in front of a computer playing games without a single thought of food or drink? If that’s a yes, then Zombie Zone’s the place to be for all you maniac gamers out there!",
+      "venue" => "TL-1 and TL-2.",
+      "time" => array( array( 1, 18, 23 ), array( 2, 15, 20 ) ),
+      "link" => "<a href='https://docs.google.com/forms/d/1nYzQa7XgJFkB-_JYA7FW2Li7msUfH8PUgp6WM9-lLFU/viewform?usp=send_form'>Register</a>",
+    ),
+    "DoTA 2" => array(
+      "description" => "Do you regularly feel your adrenaline wasting away? Can you spend hours in front of a computer playing games without a single thought of food or drink? If that’s a yes, then Zombie Zone’s the place to be for all you maniac gamers out there!",
+      "venue" => "TL-1 and TL-2.",
+      "time" => array( array( 1, 18, 23 ), array( 2, 15, 20 ) ),
+      "link" => "<a href='https://docs.google.com/forms/d/1-8k7OLq8uk3nhxuEgXAQDGlXYotEkew7ww7y6BZvonM/viewform?usp=send_form'>Register</a>",
+    ),
+    
+    
   ),
   "Kalakshetra" => array(
     "Open Art" => array(
@@ -57,7 +87,7 @@ $events_cat = array(
     "Talent Showcase" => array(
       "description" => "An event where you get a platform to show \"ANY\" of your talents like:<br><ul><li>MUSIC(Singing,Playing instruments or both)</li><li>Dramatics</li><li>Stand-up comedy</li><li>etc. :P</li>",
       "venue" => "Himalaya 105",
-      "time" => array( array( 1, 18, 20 ) ),
+      "time" => array( array( 2, 20, 22 ) ),
     ),
     "Gully Cricket" => array(
       "description" => "Most games are skin-deep, but cricket goes to the bone. So why not revive our school-time memories of playing street cricket anywhere and everywhere :p",
