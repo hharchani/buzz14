@@ -23,7 +23,10 @@ for (event in classes) {
   }, function(e){
     $('.onhover').removeClass('onhover');
     tooltip.hide();
-  });
+  }).click(function(){
+		var href = classes[$(this).data('event')];
+		window.location = "events.php#"+href;
+	});
   
   $('<div class="legend-row"></div>').append(
     $('<div class="legend-color"></div>').css('background-color', rcolor)
@@ -38,11 +41,13 @@ for (event in classes) {
 	.hover(function(e){
 		var event = $(this).addClass('onhover').data('event');
 		$('.' + classes[event] + ' div').addClass('onhover');
-		tooltip.show(e, event);
 	},
 	function(){
 		$('.onhover').removeClass('onhover');
-		tooltip.hide();
+	})
+	.click(function(){
+		var href = classes[$(this).data('event')];
+		window.location = "events.php#"+href;
 	});
 }
 $(function(){
