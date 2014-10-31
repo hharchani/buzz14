@@ -2,7 +2,7 @@ $(function(){
   //var max = Math.max.apply(undefined, $('.circle-content-wrapper').map(function(){ return $(this).outerWidth() }).get());
   $('.outer-circle').each(function(){
     var $content = $(this).find('.circle-content');
-    var size = Math.max($content.outerWidth(), $content.outerHeight()) + 1;
+    var size = Math.max($content.outerWidth(), $content.outerHeight()) + 10;
     $(this).css({
       'height' : size + 'px',
       'width' : size + 'px'
@@ -30,7 +30,7 @@ $(function(){
       });
     }, 200);
   });
-  
+
   var close = function(){
     var $circle = $( $('.overlay').data('circle') );
     var offset = $circle.offset();
@@ -48,7 +48,7 @@ $(function(){
     });
   }
   $(document).on('keydown', function(e){
-    if ( ( e.key == "Esc" || e.key == "Escape" ) && $('.overlay').is(':visible') ) {
+    if ( ( e.which == 27 || e.key == "Esc" || e.key == "Escape" ) && $('.overlay').is(':visible') ) {
       close();
     }
   });
