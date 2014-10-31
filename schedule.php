@@ -25,7 +25,7 @@
   <?php include_once('header.php'); ?>
 	<div class="container">
 		<div class="table-container">
-			<table class="table" border="0">
+			<table class="table">
 				<colgroup>
 					<col />
 					<?php
