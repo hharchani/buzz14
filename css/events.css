@@ -33,6 +33,7 @@ h3.sub-heading {
   box-shadow: 0 0 0 1em rgba(200,200,200,0.5);
   margin: 1em;
   cursor: pointer;
+  background: #000;
 }
 .inner-circle {
   height: 100%;
@@ -62,7 +63,7 @@ h3.sub-heading {
 }
 
 .inner-circle {
-  background-color: white;
+  background-color: lightgrey;
   color: black;
   z-index: 2;
   position: relative;
@@ -79,18 +80,27 @@ h3.sub-heading {
   width: 0;
   top: 0;
   left: 0;
-  background-color: white;
+  background-color: black;
   box-shadow: 0 0 1em 0 white;
-  color: black;
+  color: white;
   border-radius: 100%;
   text-align: center;
 }
+
+.overlay a {
+  text-decoration: none;
+  color: #28A3E0;
+}
+
+.overlay a:hover {
+  text-decoration: underline;
+}
+
 .overlay:before {
   content: '';
   display: inline-block;
   height: 100%;
   vertical-align: middle;
-  margin-right: -0.25em; /* Adjusts for spacing */
 }
 
 .overlay-content-wrap {
