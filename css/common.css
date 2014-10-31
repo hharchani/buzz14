@@ -1,0 +1,55 @@
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Loto", sans-serif;
+  background-color: #000;
+}
+.bg-img {
+  position: fixed;
+  width: 100%;
+  z-index: -10;
+  /* top set using js */
+}
+.bg-img img {
+  width: 100%;
+}
+
+/* ***************** Header ***************** */
+
+.header {
+  position: fixed;
+  top:0;
+  z-index: 100;
+  background: black;
+  width: 100%;
+  text-align: right;
+}
+nav {
+  margin-right: 5%;
+}
+.links {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.75em 1em;
+  margin: 0;
+  border-right: 1px solid rgba(255, 155, 155, 0.2);
+  border-left: 1px solid rgba(255, 155, 155, 0.1);
+}
+.links:hover, .links.active {
+  background-color: #970000;
+}
+a, a:hover, a:active, a:focus {
+  outline: none;
+}
+
+.no-user-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}

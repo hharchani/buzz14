@@ -1,0 +1,14 @@
+.container {
+  margin-top: 2em;
+  color: white;
+}
+
+table.table {
+  margin: auto;
+  border-collapse: collapse;
+  color: white;
+}
+
+td, th {
+  padding: 0.1em 1em;
+}
