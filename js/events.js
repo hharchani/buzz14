@@ -8,6 +8,7 @@ $(function(){
       'width' : size + 'px'
     });
   }).click(function(){
+    location.hash = '#'+this.id;
     var $this = $(this).find('.inner-circle').css('transform', 'rotateX(90deg)');
     var offset = $this.offset();
     var h = $this.height();
@@ -32,12 +33,14 @@ $(function(){
       $overlay.find('.overlay-title').html($this.find('.circle-content').html());
       $overlay.find('.overlay-des').html($this.find('.circle-des').html());
       $overlay.find('.overlay-time').html($this.find('.circle-time').html());
-      $overlay.find('.overlay-venue').html("Venue: "+$this.find('.circle-venue').html());
+      if ($this.find('.circle-venue').html())
+        $overlay.find('.overlay-venue').html("Venue: "+$this.find('.circle-venue').html());
       $overlay.find('.overlay-link').html($this.find('.circle-link').html());
     }, 200);
   });
 
   var close = function(){
+    location.hash = '';
     var $circle = $( $('.overlay').data('circle') );
     var offset = $circle.offset();
     var h = $circle.height();

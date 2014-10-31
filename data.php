@@ -111,7 +111,7 @@ $events_cat = array(
       "description" => "For all those who just want to have fun as these are games which you don't get to play in the regular course", 
       "venue" => " Football Ground",
       "time" => array( array( 2, 8.5, 10.5 ) ),
-      "link" => "Register here:<br><a href='https://docs.google.com/forms/d/1BX_QnSY3IKLiLn1sE21CFYLpwkK9ux8Ni4VPdp34gnM/viewform'> Girls </a> <a href='https://docs.google.com/forms/d/1CsH_-zfCNyh6YIDHTjMwTqb20n9gnMzqnGpaRcvpf78/viewform'> Boys </a>",
+      "link" => "Register here:<br><a href='https://docs.google.com/forms/d/1BX_QnSY3IKLiLn1sE21CFYLpwkK9ux8Ni4VPdp34gnM/viewform'>Girls</a> <a href='https://docs.google.com/forms/d/1CsH_-zfCNyh6YIDHTjMwTqb20n9gnMzqnGpaRcvpf78/viewform'>Boys</a>",
     ),
   )
 );
