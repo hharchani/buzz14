@@ -8,6 +8,7 @@ $(function(){
       'width' : size + 'px'
     });
   }).click(function(){
+    location.hash = '#'+this.id;
     var $this = $(this).find('.inner-circle').css('transform', 'rotateX(90deg)');
     var offset = $this.offset();
     var h = $this.height();
@@ -39,6 +40,7 @@ $(function(){
   });
 
   var close = function(){
+    location.hash = '';
     var $circle = $( $('.overlay').data('circle') );
     var offset = $circle.offset();
     var h = $circle.height();
