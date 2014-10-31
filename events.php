@@ -10,7 +10,7 @@
     $m = floor($part * 60);
     $a = ($h >= 12)?'PM':'AM';
     $h -= ($h >= 12)?12:0;
-    return $h.':'.$m.' '.$a;
+    return sprintf("%02s", $h).':'.sprintf("%02s", $m).' '.$a;
   }
 
   function getTime($times) {
