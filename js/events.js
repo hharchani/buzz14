@@ -66,3 +66,12 @@ $(function(){
   });
   $('.full-overlay').click(close);
 });
+
+$(document).ready(function() {
+  if (location.hash) {
+    $circ = $(location.hash);
+    if ($circ.length) {
+      $circ.click();
+    }
+  }
+});
