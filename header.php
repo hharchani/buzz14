@@ -5,7 +5,6 @@ $pages = array(
   "index" => "Home",
   "events" => "Events",
   "schedule" => "Schedule",
-  "sponsors" => "Sponsors"
 );
 foreach($pages as $page=>$name){
   echo '<a class="links'.( ($current_page == $page)? ' active' : '' ).'" href="'.$page.'.php"   >'.$name.'</a>';
