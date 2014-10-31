@@ -62,9 +62,12 @@
   text-align: center;
   z-index: 1;
 }
+
 .intro {
+  font-size: 2em;
   width: 75%;
   margin: auto;
+  font-family: "Nothing You Could Do", sans-serif;
 }
 
 .halloween {

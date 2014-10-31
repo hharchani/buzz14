@@ -7,34 +7,31 @@
    * day3 -> Monday
    * day4 -> Tuesday
    */
-  
+
+  include_once("data.php");
+
   define("day",0, true);
   define("startTime",1, true);
   define("endTime",2, true);
-  
+
   define("numOfDays", 5, true);
-  
-  $schedule = array(
-    "Hackathon"         => array( array( 3, 22, 23 ), array( 4, 00, 14 ) ),
-    
-    "Make a Meme"       => array( array( 1, 00, 23 ), array( 2, 00, 23 ) ),
-    
-    "Stomp the Yard"    => array( array( 1, 15, 19 ) ),
-    "Antakshari"        => array( array( 2, 14, 14 ) ),
-    "Movie Quiz"        => array( array( 2, 15, 15 ) ),
-    "Dumb C"            => array( array( 2, 16, 16 ) ),
-    "Pandora's Box"     => array( array( 2, 18, 18 ) ),
-    
-    "Zombie zone"       => array( array( 0, 21, 23 ), array( 1, 18, 23 ), array( 3, 15, 20 ) ),
-    
-    
-  );
-  
+
+  $schedule = array();
+  foreach ($events_cat as $cat_name=>$cat_data) {
+    foreach ($cat_data as $name=>$event) {
+      $schedule[$name] = $event['time'];
+      foreach($schedule[$name] as $i=>$time) {
+        $schedule[$name][$i][1] = floor($schedule[$name][$i][1]);
+        $schedule[$name][$i][2] = floor($schedule[$name][$i][2])-1;
+      }
+    }
+  }
+
   $mapping = array();
   $dayWise = array();
   for($i=0; $i < numOfDays; $i++)
     $dayWise[$i] = array();
-  
+
   for($i=0; $i < numOfDays; $i++) {
     $mapping[$i] = array();
     for($j=0; $j < 24; $j++) {
@@ -49,7 +46,7 @@
       }
     }
   }
-  
+
   function forSorting($timespan1, $timespan2) {
     return ($timespan1[startTime] < $timespan2[startTime]) ? -1 : 1;
   }
@@ -102,4 +99,3 @@
   foreach($schedule as $event=>$timespan) {
     $classes[$event] = str_replace($excludes, "-", strtolower($event));
   }
-  

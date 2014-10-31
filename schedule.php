@@ -7,9 +7,9 @@
 <head>
   <title>Felicity Buzz</title>
   <meta charset="utf-8">
-  
+
   <link href='http://fonts.googleapis.com/css?family=Loto' rel='stylesheet' type='text/css'>
-  
+
   <!-- Jquery | Include from Google -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <!-- If jquery unavailable from Google, get a local copy -->
@@ -37,7 +37,7 @@
 				<thead>
 					<tr>
 						<th></th>
-						<th colspan="<?php echo $max; ?>">Fri, 31st Oct</th>
+						<!--th colspan="<?php echo $max; ?>">Fri, 31st Oct</th-->
 						<th colspan="<?php echo $max; ?>">Sat, 1st Nov</th>
 						<th colspan="<?php echo $max; ?>">Sun, 2nd Nov</th>
 						<th colspan="<?php echo $max; ?>">Mon, 3rd Nov</th>
@@ -50,7 +50,7 @@
 					for($hour = 0; $hour < 24; $hour++) {
 						echo "<tr>";
 						echo "<th class='hour{$hour}'>".( ($hour < 10)? "0" : "" ).$hour."00 hrs</th>";
-						for($i=0; $i< 5*$max; $i++) {
+						for($i=$max; $i< 5*$max; $i++) {
 							$day = (int)($i/$max);
 							$index = $i%$max;
 							$class="";

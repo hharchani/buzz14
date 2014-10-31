@@ -83,13 +83,30 @@ h3.sub-heading {
   box-shadow: 0 0 1em 0 white;
   color: black;
   border-radius: 100%;
+  text-align: center;
 }
+.overlay:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
+
+.overlay-content-wrap {
+  width: 50%;
+  margin: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+/*
 .overlay-content-wrap {
   padding: 10%;
   width: 100%;
   height: 100%;
   text-align: center;
 }
+*/
 .overlay-title {
   font-size: 3em;
   font-family: "Rock Salt", cursive;

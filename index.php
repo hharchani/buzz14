@@ -22,7 +22,6 @@
 </head>
 <body>
   <?php include_once('header.php'); ?>
-  
   <div class="container">
     <div class="window no-user-select">
       <div class="theme">
@@ -38,12 +37,9 @@
       </div>
     </div>
     <div class="cover">
-	  <p class="intro">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim, augue vel scelerisque vulputate, velit lacus facilisis mi, et venenatis nisl felis sit amet nunc. Vivamus vitae varius justo. Aliquam erat volutpat. Fusce eget aliquam est. Praesent metus lectus, sagittis vitae tincidunt eu, blandit a sem. Donec auctor erat ut nulla faucibus dictum. Sed a malesuada ex. Curabitur viverra tristique efficitur. Vivamus feugiat facilisis nisl, in iaculis velit ultrices at. Duis sodales ante ipsum, nec mattis justo vulputate sed. Sed quis erat vitae erat pellentesque consequat. Ut nec dolor tellus. In vitae nisi eget ipsum congue aliquet pharetra eget turpis. Maecenas facilisis posuere ligula et feugiat. 
-	  </p>
+	  <p class="intro">Welcome to Felicity Buzz! Presenting 4 days of exciting events, ranging from sports events and a talent showcase to algorithmic programming and a hackathon.</p>
 	</div>
   </div>
-  <div class="halloween">Happy Halloween</div>
   <script src="js/home.js"></script>
 </body>
 </html>
