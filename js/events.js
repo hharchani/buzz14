@@ -2,7 +2,7 @@ $(function(){
   //var max = Math.max.apply(undefined, $('.circle-content-wrapper').map(function(){ return $(this).outerWidth() }).get());
   $('.outer-circle').each(function(){
     var $content = $(this).find('.circle-content');
-    var size = Math.max($content.outerWidth(), $content.outerHeight()) + 10;
+    var size = Math.max($content.outerWidth(), $content.outerHeight()) + 50;
     $(this).css({
       'height' : size + 'px',
       'width' : size + 'px'
@@ -22,12 +22,18 @@ $(function(){
       var winH = $(window).height();
       var winW = $(window).width();
       var size = Math.min(winH, winW);
-      $('.overlay').animate({
+      $overlay = $('.overlay');
+      $overlay.animate({
         'top' : (winH - size)/2 + 'px',
         'left': (winW - size)/2 + 'px',
         'height': size + 'px',
         'width' : size + 'px'
       });
+      $overlay.find('.overlay-title').html($this.find('.circle-content').html());
+      $overlay.find('.overlay-des').html($this.find('.circle-des').html());
+      $overlay.find('.overlay-time').html($this.find('.circle-time').html());
+      $overlay.find('.overlay-venue').html($this.find('.circle-venue').html());
+      $overlay.find('.overlay-link').html($this.find('.circle-link').html());
     }, 200);
   });
 
@@ -38,7 +44,8 @@ $(function(){
     var w = $circle.width();
     var scrollTop = $(document).scrollTop();
     $('.full-overlay').fadeOut();
-    $('.overlay').animate({
+    $overlay = $('.overlay');
+    $overlay.animate({
       'height': '0',
       'width' : '0',
       'top' : (offset.top - scrollTop  + h/2) + 'px',
@@ -46,6 +53,11 @@ $(function(){
     }, 200, function(){
       $( $(this).hide().data('circle') ).find('.inner-circle').css('transform', 'rotateX(0deg)');
     });
+    $overlay.find('.overlay-title').html('');
+    $overlay.find('.overlay-des').html('');
+    $overlay.find('.overlay-time').html('');
+    $overlay.find('.overlay-venue').html('');
+    $overlay.find('.overlay-link').html('');
   }
   $(document).on('keydown', function(e){
     if ( ( e.which == 27 || e.key == "Esc" || e.key == "Escape" ) && $('.overlay').is(':visible') ) {

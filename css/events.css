@@ -57,7 +57,9 @@ h3.sub-heading {
   font-size: 1.2em;
   padding: 0.5em;
 }
-
+.circle-data {
+  display: none;
+}
 
 
 .inner-circle {
@@ -99,7 +101,6 @@ h3.sub-heading {
   border-radius: 100%;
   text-align: center;
 }
-
 .overlay:before {
   content: '';
   display: inline-block;
@@ -113,6 +114,16 @@ h3.sub-heading {
   margin: auto;
   display: inline-block;
   vertical-align: middle;
+}
+.overlay-content-wrap {
+  padding: 10%;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.overlay-title {
+  font-size: 3em;
+  font-family: "Rock Salt", cursive;
 }
 
 .full-overlay {
