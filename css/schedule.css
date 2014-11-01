@@ -70,7 +70,8 @@ td div {
   transition: all 0.2s;
 }
 td div.onhover {
-  box-shadow: 0 0 4px 1px white;
+  box-shadow: 0 0 6px 2px white;
+  background-color: white !important;
 }
 th.onhover {
   text-shadow: 0 0 5px white;
