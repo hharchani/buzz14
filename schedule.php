@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Felicity Buzz</title>
+  <title>Schedule | Felicity Buzz</title>
   <meta charset="utf-8">
 
   <link href='http://fonts.googleapis.com/css?family=Loto' rel='stylesheet' type='text/css'>
