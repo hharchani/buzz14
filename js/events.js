@@ -2,7 +2,7 @@ $(function(){
   //var max = Math.max.apply(undefined, $('.circle-content-wrapper').map(function(){ return $(this).outerWidth() }).get());
   $('.outer-circle').each(function(){
     var $content = $(this).find('.circle-content');
-    var size = Math.max($content.outerWidth(), $content.outerHeight()) + 5;
+    var size = Math.max($content.outerWidth(), $content.outerHeight()) + 15;
     $(this).css({
       'height' : size + 'px',
       'width' : size + 'px'
