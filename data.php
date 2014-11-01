@@ -90,7 +90,7 @@ $events_cat = array(
       "time" => array( array( 2, 20, 22 ) ),
     ),
     "Stomp The Yard" => array(
-      "description" => "",
+      "description" => "An event to showcase your dance skills.",
       "venue" => "SH2",
       "time" => array( array( 2, 17, 19 ) ),
     )
