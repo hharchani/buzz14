@@ -74,7 +74,7 @@ $(document).ready(function() {
   if (location.hash) {
     $circ = $(location.hash+'-id');
     if ($circ.length) {
-      $('body').animate({'scrollTop': $circ.offset().top - (($(window).height()/2)-100)}, {
+      $('html, body').animate({'scrollTop': $circ.offset().top - (($(window).height()/2)-100)}, {
         complete: function() {
           $circ.click();
         }

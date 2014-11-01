@@ -127,7 +127,7 @@ $events_cat = array(
     "Gully Cricket" => array(
       "description" => "Most games are skin-deep, but cricket goes to the bone. So why not revive our school-time memories of playing street cricket anywhere and everywhere :p",
       "venue" => "To be announced",
-      "time" => array( ),
+      "time" => array( array( 2, 13, 18 ) ),
       "link" => "<a href='https://docs.google.com/forms/d/1pVeCcCgy3waBnkmRluZjmtLNWmKwc7RqpbAukmqTDBM/viewform'>Click Here to register</a>",
     ),
     "Futsal" => array(
