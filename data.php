@@ -27,7 +27,7 @@ $events_cat = array(
       "description" => "Frustrated of trying to get your code accepted by just another piece of code? Genius lies in elegance, and not corner cases. We present problems that'll challenge you to think and all it'll take is a brainwave! Come dare, cut the Gordian knot.",
       "venue" => "Wherever you want to :P (Online event)",
       "time" => array( array( 2, 10, 24 ), array( 3, 0, 24 ), array( 4, 0, 10 ) ),
-      "link" => "<a href='https://rashi95.pythonanywhere.com/Gordian_Knot'>Go to Event portal</a>",
+//      "link" => "<a href='https://rashi95.pythonanywhere.com/Gordian_Knot'>Go to Event portal</a>",
     ),
   ),
   "Zombie Zone" => array(
