@@ -29,6 +29,11 @@ $events_cat = array(
       "time" => array( array( 2, 10, 24 ), array( 3, 0, 24 ), array( 4, 0, 10 ) ),
 //      "link" => "<a href='https://rashi95.pythonanywhere.com/Gordian_Knot'>Go to Event portal</a>",
     ),
+    "Break-In" => array(
+      "description" => "Break-In is IIIT-Hyderabad's premier security competition, you will compete with hackers and security enthusiasts to secure the top spot in this Jeopardy style Capture the Flag event. And believe us when we say capture, for it will not be handed to you on a silver platter. Participants will have to crawl the depths of the web, pry open encrypted exchanges and reverse engineer binaries to finally emerge victorious. Only the most skilled shall win!",
+      "venue" => "Wherever you want to :P (Online event)",
+      "time" => array( array( 3, 18, 21 ) ),
+    ), 
   ),
   "Pulsation" => array(
     "King of Breadboards" => array(
@@ -101,7 +106,7 @@ $events_cat = array(
       "link" => "<a href='http://goo.gl/forms/OvvG81Qx2O'>Register Here</a>"
     ),
   ),
-  "Cultural" => array(
+  "Cultural Colosseum" => array(
     "Antakshari" => array(
       "description" => "Some Desc of this",
       "venue" => "To be announced",
