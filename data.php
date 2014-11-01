@@ -78,7 +78,7 @@ $events_cat = array(
       "link" => "<a href='http://goo.gl/forms/OvvG81Qx2O'>Register Here</a>"
     ),
   ),
-  "Miscellaneous" => array(
+  "Cultural" => array(
     "Antakshari" => array(
       "description" => "Some Desc of this",
       "venue" => "To be announced",
@@ -89,6 +89,13 @@ $events_cat = array(
       "venue" => "To be announced",
       "time" => array( array( 2, 20, 22 ) ),
     ),
+    "Stomp The Yard" => array(
+      "description" => "",
+      "venue" => "SH2",
+      "time" => array( array( 2, 17, 19 ) ),
+    )
+  ),
+  "Sports" => array(
     "Gully Cricket" => array(
       "description" => "Most games are skin-deep, but cricket goes to the bone. So why not revive our school-time memories of playing street cricket anywhere and everywhere :p",
       "venue" => "To be announced",
