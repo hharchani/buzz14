@@ -19,9 +19,15 @@ $events_cat = array(
       "time" => array( array( 2, 18.75, 20 ) ),
     ),
     "Code Craft" => array(
-      "description" => " A 3 hour coding contest comprising of 5 questions, let's see what you are made of. It's simple: you read the problems, code the solution and upload, sounds simple right?",
+      "description" => "A 3 hour coding contest comprising of 5 questions, let's see what you are made of. It's simple: you read the problems, code the solution and upload, sounds simple right?",
       "venue" => "Wherever you want to :P (Online event)",
       "time" => array( array( 4, 17, 20 ) ),
+    ),
+    "Gordian Knot" => array(
+      "description" => "Frustrated of trying to get your code accepted by just another piece of code? Genius lies in elegance, and not corner cases. We present problems that'll challenge you to think and all it'll take is a brainwave! Come dare, cut the Gordian knot.",
+      "venue" => "Wherever you want to :P (Online event)",
+      "time" => array( array( 2, 10, 24 ), array( 3, 0, 24 ), array( 4, 0, 10 ) ),
+//      "link" => "<a href='https://rashi95.pythonanywhere.com/Gordian_Knot'>Go to Event portal</a>",
     ),
   ),
   "Pulsation" => array(
@@ -95,7 +101,7 @@ $events_cat = array(
       "link" => "<a href='http://goo.gl/forms/OvvG81Qx2O'>Register Here</a>"
     ),
   ),
-  "Miscellaneous" => array(
+  "Cultural" => array(
     "Antakshari" => array(
       "description" => "Some Desc of this",
       "venue" => "To be announced",
@@ -106,6 +112,13 @@ $events_cat = array(
       "venue" => "To be announced",
       "time" => array( array( 2, 20, 22 ) ),
     ),
+    "Stomp The Yard" => array(
+      "description" => "An event to showcase your dance skills.",
+      "venue" => "SH2",
+      "time" => array( array( 2, 17, 19 ) ),
+    )
+  ),
+  "Sports" => array(
     "Gully Cricket" => array(
       "description" => "Most games are skin-deep, but cricket goes to the bone. So why not revive our school-time memories of playing street cricket anywhere and everywhere :p",
       "venue" => "To be announced",
