@@ -26,14 +26,14 @@ $events_cat = array(
     "Gordian Knot" => array(
       "description" => "Frustrated of trying to get your code accepted by just another piece of code? Genius lies in elegance, and not corner cases. We present problems that'll challenge you to think and all it'll take is a brainwave! Come dare, cut the Gordian knot.",
       "venue" => "Wherever you want to :P (Online event)",
-      "time" => array( array( 2, 10, 24 ), array( 3, 0, 24 ), array( 4, 0, 10 ) ),
-//      "link" => "<a href='https://rashi95.pythonanywhere.com/Gordian_Knot'>Go to Event portal</a>",
+      "time" => array( array( 2, 14, 24 ), array( 3, 0, 24 ), array( 4, 0, 14 ) ),
+      "link" => "<a href='http://felicity.iiit.ac.in/~buzz/gordian/'>Go to Event portal</a>",
     ),
     "Hack-In" => array(
       "description" => "Hack-In is a security competition, you will compete with hackers and security enthusiasts to secure the top spot in this Jeopardy style Capture the Flag event. And believe us when we say capture, for it will not be handed to you on a silver platter. Participants will have to crawl the depths of the web, pry open encrypted exchanges and reverse engineer binaries to finally emerge victorious. Only the most skilled shall win!",
       "venue" => "Wherever you want to :P (Online event)",
       "time" => array( array( 3, 18, 21 ) ),
-    ), 
+    ),
   ),
   "Pulsation" => array(
     "King of Breadboards" => array(
